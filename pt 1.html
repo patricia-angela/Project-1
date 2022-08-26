@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet BTS!</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+      div {
+        display: block;
+        text-align: center;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+        border-style: dotted;
+        border-color: rgb(206, 142, 222);
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      hr {
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      button {
+        display: block;
+        margin: 15px auto;
+        padding: 10px 8px;
+        border-color: blueviolet;
+        font-size: 16px;
+        border-radius: 5px;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: #d8aed4;
+        transition: ease-in-out;
+      }
+      img {
+        display: block;
+        border-radius: 50px;
+        border: #d8aed4;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      div {
+        font-size: 12px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      a {
+        display: block;
+        font-size: 14px;
+        text-align: center;
+      }
+      footer {
+        font-size: 11px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Meet BTS</h1>
+      <h2>✌️ Famous South Korean Boyband ✌️</h2>
+      <span>
+        <p>
+          BTS, also known as the Bangtan Boys, is a South Korean boy band formed
+          in 2010 and debuting in 2013 under Big Hit Entertainment.
+        </p>
+        <hr />
+        Consists of 7 members: <strong>Jin</strong>, <strong>Suga</strong>,
+        <strong>J-Hope</strong>, <strong>RM</strong>, <strong>Jimin</strong>,
+        <strong>V</strong>, and <strong>Jungkook</strong>.
+        <hr />
+        <br />
+
+        <img
+          src="https://th.bing.com/th/id/R.20474d23635e41014cf2c48786853466?rik=vfeMLZrtSVK3Dg&pid=ImgRaw&r=0"
+          width="432px"
+        />
+        <br />
+        <p>
+          Originally a hip hop group, their musical style has evolved to
+          incorporate a wide range of genres; their lyrics have often discussed
+          mental health, the troubles of school-age youth and coming of age,
+          loss, the journey towards self-love, and individualism. Their work
+          also frequently references literature, philosophy and psychological
+          concepts, and includes an alternate universe storyline.
+        </p>
+      </span>
+    </div>
+    <section>
+      <a href="https://ibighit.com/bts/eng/profile/" target="_blank"
+        >Learn more on their offical page!</a
+      >
+    </section>
+    <br />
+    <button>🎶 Subscribe 🎶</button>
+    <footer>Made by <em>Trish</em></footer>
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let member = prompt("Who is your bias?");
+
+        if (email === "") {
+          alert("Email not found 😒");
+        } else {
+          alert(
+            "Thanks for joining BTS Army " +
+              name +
+              "! We'll keep you updated on all new songs! 💜 "
+          );
+        }
+      }
+
+      let subscribeButton = document.querySelector("button");
+      subscribeButton.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
